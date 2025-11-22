@@ -41,7 +41,7 @@ class flat_bank : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            if (login == "ects" && password == "ects2023") {
+            if (login == "Roman" && password == "123") {
                 val editor = sharedPreferences.edit()
                 editor.putString("login", login)
                 editor.putString("password", password)
@@ -57,7 +57,7 @@ class flat_bank : AppCompatActivity() {
                     val intent = Intent(this, Rashet::class.java)
                     startActivity(intent)
                 } else {
-                    showAlertDialog("Неверный логин или пароль")
+                    showAlertDialog("Неверный логин или пароль, правильно: L:Roman P:123")
                 }
             }
         }
