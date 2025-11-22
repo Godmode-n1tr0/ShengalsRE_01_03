@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:id="@+id/Rashet"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:src="@drawable/ic_arrow_back"
+            android:onClick="onBackClick" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/Расчет"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/one"
+                android:textColor="@color/blacks"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/spinnerApartmentType"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/black"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/metres" />
+
+            <EditText
+                android:id="@+id/editTextMeters"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/black"
+                android:background="@drawable/metres"
+                android:gravity="center"
+                android:hint="@string/метры"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        android:paddingRight="10dp">
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/radius"
+            android:text="@string/Рассчитать"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Raschet_Ploshad</string>
+    <string name="Регистрация">Регистрация</string>
+    <string name="Введите">Введите ваш логин и пароль</string>
+    <string name="Логин">Логин</string>
+    <string name="Пароль">Пароль</string>
+    <string name="Войти">Войти</string>
+    <string name="Расчет">Расчет площади</string>
+    <string name="главное">На главное меню</string>
+    <string name="one">Выберите тип квартиры</string>
+    <string name="Рассчитать">Рассчитать</string>
+    <string name="метры">введите количество метров</string>
+    <string name="Результат">Результат</string>
+    <string name="регистрация">РЕГИСТРАЦИЯ</string>
+    <string name="rashet">Расчет</string>
+    <string name="resultes">результат</string>
+    <string name="result_rashet">Результат расчета</string>
+    <string name="kol_metres">Количество метров</string>
+    <string name="summ">0 тыс. рублей</string>
+    <string name="reg">РЕГИСТРАЦИЯ</string>
+
+    <string-array name="apartment_types">
+        <item>1-о комнатная квартира</item>
+        <item>2-х комнатная квартира</item>
+        <item>3-х комнатная квартира</item>
+        <item>Студия</item>
+    </string-array>
+</resources>
