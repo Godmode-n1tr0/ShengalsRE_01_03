@@ -35,47 +35,43 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp">
-        <LinearLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
+            android:gravity="center"
+            android:text="@string/one"
+            android:textColor="@color/blacks"
+            android:textSize="16sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="@string/one"
-                android:textColor="@color/blacks"
-                android:textSize="16sp" />
+        <Spinner
+            android:id="@+id/spinnerApartmentType"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/metres" />
 
-            <Spinner
-                android:id="@+id/spinnerApartmentType"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:backgroundTint="@color/black"
-                android:layout_marginTop="10dp"
-                android:background="@drawable/metres" />
-
-            <EditText
-                android:id="@+id/editTextMeters"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:layout_marginTop="20dp"
-                android:backgroundTint="@color/black"
-                android:background="@drawable/metres"
-                android:gravity="center"
-                android:hint="@string/метры"
-                android:inputType="numberDecimal"
-                android:textAlignment="center"
-                android:textSize="12sp" />
+        <EditText
+            android:id="@+id/editTextMeters"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:background="@drawable/metres"
+            android:gravity="center"
+            android:hint="@string/метры"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textSize="12sp" />
 
 
-        </LinearLayout>
-    </ScrollView>
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
